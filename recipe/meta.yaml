@@ -1,5 +1,5 @@
 {% set name = "django-simple-deploy" %}
-{% set version = "0.5.13" %}
+{% set version = "0.5.14" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django-simple-deploy-{{ version }}.tar.gz
-  sha256: 849e133bbd30bf52fd27be0ede9a691e9c7e0fbd7f0ca49c01f481db01eff07c
+  sha256: 4bf79955c1367872115bd2aa0e1f60e7f6b42d72affdb807f9b0a2be6a14641f
 
 build:
   number: 0
@@ -25,11 +25,11 @@ requirements:
     - django >=3.0
     - python >=3.8
     - python-tzdata
+    - toml >=0.10.2
 
 test:
   imports:
     - simple_deploy
-    - simple_deploy.management.commands.utils
   commands:
     - pip check
   requires:
