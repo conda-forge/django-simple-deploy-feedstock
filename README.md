@@ -1,11 +1,11 @@
-About django-simple-deploy
-==========================
+About django-simple-deploy-feedstock
+====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/django-simple-deploy-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ehmatthes/django-simple-deploy
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/django-simple-deploy-feedstock/blob/main/LICENSE.txt)
 
 Summary: A management command that auto-configures for deployment.
 
