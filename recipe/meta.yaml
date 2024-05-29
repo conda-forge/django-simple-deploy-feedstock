@@ -19,13 +19,11 @@ requirements:
   host:
     - pip
     - python >=3.8
-    - setuptools
-    - wheel
   run:
-    - django >=3.0
+    - django >=4.2
     - python >=3.8
-    - python-tzdata
     - toml >=0.10.2
+    - requests >=2.28.0
 
 test:
   imports:
