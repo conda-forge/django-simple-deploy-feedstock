@@ -1,5 +1,5 @@
 {% set name = "django-simple-deploy" %}
-{% set version = "0.6.5" %}
+{% set version = "0.7.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 86f63eac4e7bf980945a2d7944b63856d69a95013dfd39a3af0f01e70c9165f2
+  sha256: ff3325fe2bb579431a028156471f98b82abce00d26a55dd0f844c98365210350
 
 build:
   number: 0
@@ -24,6 +24,7 @@ requirements:
     - python >=3.8
     - toml >=0.10.2
     - requests >=2.28.0
+    - pluggy >=1.5.0
 
 test:
   imports:
