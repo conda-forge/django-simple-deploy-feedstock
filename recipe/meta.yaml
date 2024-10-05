@@ -19,6 +19,9 @@ requirements:
   host:
     - pip
     - python >=3.8
+    - setuptools
+    - wheel
+
   run:
     - django >=4.2
     - python >=3.8
