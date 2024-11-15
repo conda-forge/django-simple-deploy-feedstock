@@ -1,5 +1,5 @@
 {% set name = "django-simple-deploy" %}
-{% set version = "0.7.2" %}
+{% set version = "0.8.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: bdb4c257d8149d3f3ca21cd6ef8189476be05197e92586e4a2b76c9d7316f774
+  sha256: 17f9edf6c99805ecd804ec8d380dee70e5a385bcd64358fb87d5fee9cbcdc2c3
 
 build:
   number: 0
