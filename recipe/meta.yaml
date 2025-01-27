@@ -31,7 +31,7 @@ requirements:
 
 test:
   imports:
-    - simple_deploy
+    - django_simple_deploy
   commands:
     - pip check
   requires:
