@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: django-simple-deploy
-  version: 1.1.0
+  version: "1.2.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: be1e220906c1ef441b5c0c89cf8d0caaa1c19088236706cdc7629078241ba3a3
+  sha256: bb934437edc1dd30ab1f73f64b559457a44e0473f182d711954732c25cf61705
 
 build:
   number: 0
