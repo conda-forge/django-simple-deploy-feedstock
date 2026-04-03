@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: django-simple-deploy
-  version: "1.4.0"
+  version: "1.4.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 27748ff3dfcccc33eee4d2a633a934c41b8578bc05bdc58c8ad4d82f5237f91c
+  sha256: 598f8a9cd5796bde5274c7c1894086cfe066898bf180e4cd0c7eeba30904af80
 
 build:
   number: 0
@@ -22,7 +22,6 @@ requirements:
     - pip
     - python ${{ python_min }}.*
     - setuptools
-    - wheel
   run:
     - python >=${{ python_min }}
     - django >=4.2
@@ -35,7 +34,9 @@ tests:
       imports:
         - django_simple_deploy
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: A management command that auto-configures for deployment.
